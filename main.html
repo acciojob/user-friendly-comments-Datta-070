@@ -1,16 +1,82 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Friendly Comments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .comment-section {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .comment-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .comment {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+
+        .comment-date {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="comment-section">
+        <textarea class="comment-input" rows="4" cols="50" placeholder="Write your comment here..."></textarea>
+        <button class="submit-btn">Submit</button>
 
+        <!-- Dummy Comments -->
+        <div class="comment">
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu nisi ac leo congue iaculis.</p>
+            <p class="comment-author">John Doe</p>
+            <p class="comment-date">May 12, 2024</p>
+        </div>
+
+        <div class="comment">
+            <p class="comment-text">Sed euismod nisi eget quam ultricies, at efficitur nulla lobortis.</p>
+            <p class="comment-author">Jane Smith</p>
+            <p class="comment-date">May 10, 2024</p>
+        </div>
+
+        <div class="comment">
+            <p class="comment-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p class="comment-author">Alice Johnson</p>
+            <p class="comment-date">May 8, 2024</p>
+        </div>
+    </div>
 </body>
-
 </html>
